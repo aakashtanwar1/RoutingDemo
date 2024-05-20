@@ -1,0 +1,67 @@
+<div class="detailClass">
+
+    <button  (click)="goBack()">Back</button>
+    <br>
+    
+    @if(itemId){
+    <h3>Item ID: {{ itemId }}</h3>
+    }
+    @if(itemId == 1){
+    <ul>
+        <li>iPhone 15 </li>
+        <li>iPhone 15 Plus </li>
+        <li>iPhone 15 Pro </li>
+        <li>iPhone 15 Pro Max </li>
+    </ul>
+    }
+    @if(itemId == 2){
+    <ul>
+        <li>Samsung 15 </li>
+        <li>Samsung 15 Plus </li>
+        <li>Samsung 15 Pro </li>
+        <li>Samsung 15 Pro Max </li>
+    </ul>
+    }
+    @if(itemId == 3){
+    <ul>
+        <li>Nokia 15 </li>
+        <li>Nokia 15 Plus </li>
+        <li>Nokia 15 Pro </li>
+        <li>Nokia 15 Pro Max </li>
+    </ul>
+    }
+
+    @if(queryData == "oneplus"){
+        <h3>Search name: {{ queryData }}</h3>
+    <p>OnePlus was founded by Pete Lau and Carl Pei on 16 December 2013 to develop a high-end flagship smartphone running Cyanogen OS that would come to be known as the OnePlus One. OnePlus would continue to release smartphones afterwards. In 2020, OnePlus released the OnePlus Nord, its first mid-range smartphone since the OnePlus X in 2015. Pei would oversee the design and marketing of OnePlus' products until his departure from the company in October 2020, going on to found the consumer electronics manufacturer Nothing.</p>
+    }
+
+    @if(routeData){
+        <h3>Route Data: {{ routeData }}</h3>
+    }
+
+    @if(postId){
+        <h3>Post id: {{ postId }}</h3>
+        <p>Angular is a TypeScript-based, free and open-source single-page web application framework run on Node.js. It is led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.</p>
+    }
+
+</div>
+
+    <!-- <ul *ngIf="itemId == 1">
+    <li>iPhone 15 </li>
+    <li>iPhone 15 Plus </li>
+    <li>iPhone 15 Pro </li>
+    <li>iPhone 15 Pro Max </li>
+</ul>
+<ul *ngIf="itemId == 2">
+    <li>Samsung 15 </li>
+    <li>Samsung 15 Plus </li>
+    <li>Samsung 15 Pro </li>
+    <li>Samsung 15 Pro Max </li>
+</ul>
+<ul *ngIf="itemId == 3">
+    <li>Nokia 15 </li>
+    <li>Nokia 15 Plus </li>
+    <li>Nokia 15 Pro </li>
+    <li>Nokia 15 Pro Max </li>
+</ul> -->

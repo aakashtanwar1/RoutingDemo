@@ -1,1 +1,30 @@
 <p>Home Page</p>
+
+<!-- Patrametrized Route -->
+@for (item of items; track item){
+<li><a [routerLink]="['/details', item.id]">{{ item.name }}</a></li>
+}
+
+<!-- <ul>
+    <li *ngFor="let item of items">
+      <a [routerLink]="['/details', item.id]">{{ item.name }}</a>
+    </li>
+  </ul> -->
+
+  <!-- navigateByUrl example -->
+  <br>
+  <button (click)="navigateByUrl()">Contact Us</button>
+ <br>
+ <br>
+  <!--  Query Parameters -->
+  <a [routerLink]="['/details']" [queryParams]="{name: 'oneplus'}">OnePlus</a>
+  
+  <!--  Route Data -->
+  <br>
+ <br>
+  <a [routerLink]="['/details']">Route Data</a>
+
+  <!--  State Object-->
+  <br>
+ <br>
+  <button (click)="navigateToPost()">Go to Post 1</button>
